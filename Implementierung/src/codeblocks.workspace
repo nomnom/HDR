@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="HDR Light">
+		<Project filename="calibrate_camera/calibrate_camera.cbp" />
+		<Project filename="undistort_display/undistort_display.cbp" />
+		<Project filename="control_display/control_display.cbp" />
+		<Project filename="evaluate_display/evaluate_display.cbp" />
+		<Project filename="show_on_display/show_on_display.cbp" />
+		<Project filename="artoolkit_test/artoolkit_test.cbp" />
+		<Project filename="generate_patterns/generate_patterns.cbp" />
+		<Project filename="reconstruct/reconstruct.cbp" />
+		<Project filename="lightstage/lightstage.cbp" active="1" />
+		<Project filename="tools/imgtools2.cbp" />
+		<Project filename="tools/imgtools.cbp" />
+		<Project filename="tools/vidtools.cbp" />
+		<Project filename="tools/hdrtools.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

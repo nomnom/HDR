@@ -1,0 +1,3 @@
+# plot image row/col values channel 0
+
+./imgtools -i tmp/tmp_canon_preview.ppm -H 1030 | grep "channel 0" -A1 | tail -n +2 | sed 's/ /\n/g' >  tmp/plot.dat &&  echo plot \'tmp/plot.dat\' w l | gnuplot -p

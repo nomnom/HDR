@@ -1,0 +1,175 @@
+# layout: 4x6
+# size: 48
+# spacing: 24
+
+
+24
+
+data/marker/marker_8.dat
+48
+0 0
+1 0 0 -182.5
+0 1 0 180
+0 0 1 -149
+
+data/marker/marker_9.dat
+48
+0 0
+1 0 0 -110.5
+0 1 0 180
+0 0 1 -149
+
+data/marker/marker_10.dat
+48
+0 0
+1 0 0 -38.5
+0 1 0 180
+0 0 1 -149
+
+data/marker/marker_11.dat
+48
+0 0
+1 0 0 33.5
+0 1 0 180
+0 0 1 -149
+
+data/marker/marker_12.dat
+48
+0 0
+1 0 0 -182.5
+0 1 0 108
+0 0 1 -149
+
+data/marker/marker_13.dat
+48
+0 0
+1 0 0 -110.5
+0 1 0 108
+0 0 1 -149
+
+data/marker/marker_14.dat
+48
+0 0
+1 0 0 -38.5
+0 1 0 108
+0 0 1 -149
+
+data/marker/marker_15.dat
+48
+0 0
+1 0 0 33.5
+0 1 0 108
+0 0 1 -149
+
+data/marker/marker_16.dat
+48
+0 0
+1 0 0 -182.5
+0 1 0 36
+0 0 1 -149
+
+data/marker/marker_17.dat
+48
+0 0
+1 0 0 -110.5
+0 1 0 36
+0 0 1 -149
+
+data/marker/marker_18.dat
+48
+0 0
+1 0 0 -38.5
+0 1 0 36
+0 0 1 -149
+
+data/marker/marker_19.dat
+48
+0 0
+1 0 0 33.5
+0 1 0 36
+0 0 1 -149
+
+data/marker/marker_20.dat
+48
+0 0
+1 0 0 -182.5
+0 1 0 -36
+0 0 1 -149
+
+data/marker/marker_21.dat
+48
+0 0
+1 0 0 -110.5
+0 1 0 -36
+0 0 1 -149
+
+data/marker/marker_22.dat
+48
+0 0
+1 0 0 -38.5
+0 1 0 -36
+0 0 1 -149
+
+data/marker/marker_23.dat
+48
+0 0
+1 0 0 33.5
+0 1 0 -36
+0 0 1 -149
+
+data/marker/marker_24.dat
+48
+0 0
+1 0 0 -182.5
+0 1 0 -108
+0 0 1 -149
+
+data/marker/marker_25.dat
+48
+0 0
+1 0 0 -110.5
+0 1 0 -108
+0 0 1 -149
+
+data/marker/marker_26.dat
+48
+0 0
+1 0 0 -38.5
+0 1 0 -108
+0 0 1 -149
+
+data/marker/marker_27.dat
+48
+0 0
+1 0 0 33.5
+0 1 0 -108
+0 0 1 -149
+
+data/marker/marker_28.dat
+48
+0 0
+1 0 0 -182.5
+0 1 0 -180
+0 0 1 -149
+
+data/marker/marker_29.dat
+48
+0 0
+1 0 0 -110.5
+0 1 0 -180
+0 0 1 -149
+
+data/marker/marker_30.dat
+48
+0 0
+1 0 0 -38.5
+0 1 0 -180
+0 0 1 -149
+
+data/marker/marker_31.dat
+48
+0 0
+1 0 0 33.5
+0 1 0 -180
+0 0 1 -149
+

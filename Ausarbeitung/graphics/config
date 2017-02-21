@@ -1,0 +1,52 @@
+#~/bin/bash
+
+# config file
+
+# directory containing all our tools
+idir=`pwd`/../../Implementierung
+
+# directory to the experiment data
+edir=`pwd`/../../Implementierung/experiments
+
+
+
+#
+# gnuplot config
+#
+
+function graph_plotargs() {
+  echo "set terminal svg  size $1 dashed dynamic enhanced fname 'arial'  fsize 10; set ylabel norotate; set xlabel norotate; set key left; set ytics nomirror out ; set xtics nomirror out; set grid lt 1 lc rgb 'grey';"
+  #echo "set terminal pngcairo"
+}
+
+#heatmap setup and styles
+function map_plotargs() {
+  echo "set terminal png size $1 ; set ylabel norotate; set cblabel norotate; set key outside center top ; set pm3d map; set tics nomirror out; set xtics nomirror"
+ 
+} 
+
+graph_lw=0.5
+# rgb linestile
+graph_ls_rgb="set style line 1 lt 1 lw $graph_lw lc 1; \
+              set style line 2 lt 1 lw $graph_lw lc 2; \
+              set style line 3 lt 1 lw $graph_lw lc 3;"
+#the rgb point linestile
+graph_ls_pt_rgb="set style line 1 lt 1 lw $graph_lw pt 1 ps 5 lc 1; \
+                 set style line 2 lt 1 lw $graph_lw pt 6 ps 5 lc 2; \
+                 set style line 3 lt 1 lw $graph_lw pt 2 ps 5 lc 3;" 
+
+
+
+# the normal linestile
+graph_ls="set style line 1 lt 1 lw $graph_lw lc rgb 'black'; \
+          set style line 2 lt 2 lw $graph_lw lc rgb 'black'; \
+          set style line 3 lt 4 lw $graph_lw lc rgb 'black';" 
+
+# the normal point linestile
+graph_ls_pt="set style line 2 lt 1 lw $graph_lw pt 1 ps 1 lc rgb 'black'; \
+             set style line 2 lt 2 lw $graph_lw pt 6 ps 1 lc rgb 'black'; \
+             set style line 3 lt 3 lw $graph_lw pt 2 ps 1 lc rgb 'black';" 
+
+
+
+

@@ -1,0 +1,63 @@
+
+\chapter{Zusammenfassung und Ausblick} \label{zusammenfassung}
+  
+   In dieser Arbeit konnte gezeigt werden dass es möglich ist, mit einem Bildschirm eine fotografische Beleuchtung in hoher Auflösung herzustellen. 
+ 
+   Um dies zu realisieren, wurde das System aus Hardwarekomponenten zuerst geometrisch und radiometrisch modelliert und anschließend kalibriert.
+   Dabei wurde für jedes Bildschirmpixel ein eigenes Ansprechverhalten angenommen, und im Kalibrierungsvorgang mit reduzierter Auflösung rekonstruiert.
+   Es wurde eine Anordnung aus selbstleuchtenden Fiducials beschrieben, die es erlaubt, die Bildschirmposition über die im Laptop eingebaute Webcam zu bestimmen.
+   Anhand der von ARToolKit berechneten Webcamposition konnte so über das geometrische Modell die Position aller Pixel in Relation zur Szene berechnet werden.
+   
+   Die Strahldichte, die von jedem Pixel ausgehen muss, wurde mittels perspektivischen Projektionen aus einer Cube-Map berechnet.
+   Durch eine invertierung des Ansprechverhaltens war es möglich eine LDR-Beleuchtung anhand einer Environment-Map zu erzeugen.
+   Es wurde gezeigt, wie der Dynamikbereich des Bildschirms dabei mit einer zeitvariante Sequenz vergrößert werden kann, und wie sich eine solche Sequenz konstruieren und berechnen lässt.
+   
+   Das vorgestellte Verfahren wurde stückweise evaluiert, und im Anschluss anhand zweier Testszenarios in der Praxis getestet.
+   Mit den Ergebnissen konnte gezeigt werden dass es möglich ist, eine Szene von Hand in hoher auflösung nahezu vollständig zu beleuchten.
+   Die Überlappungen von Teilbeleuchtungen wurde dabei korrekt behandelt, sodass eine zusammenhängende Lichtfläche entsteht.
+   Da ein Benutzer bei der Beleuchtung driftet, verwackelt, und auch den Winkel nur ungenau einstellen kann, treten dennoch Artefakte auf, die eine weitere Optimierung des Systems bedingen.  
+ 
+   Es konnte herausgefunden werden, dass mit dem Laptopbildschirm eine HDR-Beleuchtung nur mit sehr langen HDR-Sequenzen möglich ist.
+   Aufgrund der beschränkten Framerate werden dazu sehr lange Belichtungszeiten benötigt, in der ein Benutzer den Bildschirm absolut still halten muss.
+   Das Verfahren ist, so wie es beschrieben wurde, also nur bedingt in der Praxis einsetzbar.
+
+   
+ \section*{Ausblick}
+   
+  
+  Es sind zahlreiche Erweiterungen denkbar, mit denen sich die Ergebnisse und die Anwendung in der Praxis verbessern lassen könnte.
+\begin{description}
+  \item[Tracking-Stage] \hfill \\     
+    Die Tracking-Stage ermöglicht zwar die Positionsberechnung bei sehr vielen Bildschirmpositionen, eine vollständige Beleuchtung ist damit allerdings nicht möglich.
+    Es sind andere Ansätze denkbar, beispielsweise könnte man den Bildschirm mit Hilfe von externen Kameras tracken oder eine zweite Kamera daran befestigen.
+    Damit wäre der Aufbau zwar nicht mehr so kompakt, aber die Bildschirmposition wäre in jeder Position berechenbar, sodass auch der untere Teil der einfallenden Beleuchtung erzeugt werden kann.
+   
+  \item[Ansprechverhalten] \hfill \\ 
+    Der Bildschirm kann in der Praxis nie exakt von Hand an die Position bewegt werden, für die er radiometrisch kalibriert wurde.
+    Da der Winkel im radiometrischen Modell als fix betrachtet wird, kommt es zu Abweichungen in der hergestellten Beleuchtung.
+    Die maximale Strahldichte sowie das Ansprechverhalten ändern sich.
+    
+    Würde man das  radiometrischen Modell um die Winkelabhängigkeit erweitern, so könnte man dieses Problem eliminieren.
+    Der Benutzer hätte mehr Freiheit bei der Beleuchtung und enge Toleranzen müsste er nicht mehr einhalten: 
+      Die Beleuchtung wäre auch bei einem abweichendem Abstand oder Winkel korrekt.
+          
+    Ein Modell, das den Austrittswinkel beachtet, ist um zwei Dimensionen  größer als das beschriebene.
+    Eine diskrete Darstellung der Ansprechkurven würde sehr viel Speicher benötigen, man müsste sie als parametrische Funktionen (Polynome oder Exponentialfunktionen) darstellen. 
+    Auch die Kalibrierungsroutinen wären deutlich komplizierter, da der Bildschirm aus vielen Blickwinkeln aufgenommen werden muss.
+    Damit ein passendes Modell entwickelt werden kann, muss die Winkelabhängigkeit des Bildschirms genauer untersucht werden.
+    
+   \item[Beleuchtungsablauf] \hfill \\
+    Das beschriebene Beleuchtungsverfahren hat den Nachteil, dass der mit einer HDR-Sequenz erreichbare Dynamikbereich in der Praxis aufgrund  der beschränkten Framerate stark begrenzt ist.
+    Es sind allerdings auch andere Vorgehensweisen denkbar, mit denen ein größerer Dynamikbereich möglich sein sollte.
+    Man könnte beispielsweise eine HDR-Beleuchtung in Echtzeit durchführen, indem man die Strahldichteberechnung und den HDR-Algorithmus auf der GPU implementiert. 
+    Die DSLR-Kamera könnte man dabei im Bulb-Mode ansteuern.
+    An den Stellen, an den die einfallende Beleuchtung eine hohe Intensität besitzt, muss der Bildschirm dann auch länger verweilen.
+    Der Benutzer muss so den Bildschirm dann nicht mehr still an einzelne Positionen halten, sondern kann ihn langsam um die Szene bewegen. 
+    Ein Verwackeln oder Driften spielt bei einer ausreichend präzisen Positionsberechnung keine Rolle mehr, da es in Echtzeit ausgeglichen werden kann.
+ 
+    In diesem Fall ist es jedoch nicht mehr möglich, den Benutzer  mit einem  Programm an die richtige Positionen zu führen.
+    Eine Echtzeitbeleuchtung setzt deshalb ein um den Winkel erweitertes Ansprechverhalten, wie im vorherigen Abschnitt beschrieben wurde, vorraus.
+    Desweiteren ist es so auch nicht möglich, ein Darkframe aufzunehmen.
+    Um eine HDR-Beleuchtung in Echtzeit realisieren zu können müsste man also einen LED-Bildschirm einsetzen, da der hohe Schwarzwert des LCDs nicht mehr reduziert werden kann.
+    
+  \end{description}

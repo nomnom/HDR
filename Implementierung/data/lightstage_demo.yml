@@ -1,0 +1,135 @@
+%YAML:1.0
+#
+# lightstage configuration file for presentation demo
+#
+
+## artoolkit multimarker config file for the stage
+markerConfigFile: "data/marker/stage.dat"
+
+## required number of visible marker before position is accepted
+numMarkerRequired: 2
+
+## size of virtual light stage sphere in mm, for guided display movement
+stageRadius: 500
+
+## stage radius tolerance (allowed delta radius)
+stageRadiusTolerance: 100
+
+## max allowed light angle in degree
+stageAngleTolerance: 15
+
+allowedDrift: 100
+stabilityTolerance: 50
+useOverlapCheck: 0
+
+## origin position / translation (note: z-dir is up; (0,0,0) is at center of platform) unit is mm
+stageOrigin: [ 0.0, 0.0, 0 ] 
+
+## number of frames: increase display dynamic range by this much
+hdrSequenceSize: 100 
+
+## choose maxmimum possible FPS here
+hdrSequenceFPS: 25
+
+## hdr frame blur
+hdrSequenceBlurSize: 0.00
+
+## 0 -> autoscale 
+radianceMultiplier: 0
+
+## time between gphoto call and showing the image on the screen
+#der
+captureWaitTime: 0.5
+
+## exposure time in seconds; must be large enough to fit the hdr sequence
+dslrExposure: 3.2
+
+## in sweep mode: maximum DSLR exposure time in seconds
+dslrAperture: 22
+
+## apply cos phi factor while calculating required screen radiance?
+useCosFactor: 0
+
+## use colorspace transform?
+useColorSpaceTransform: 0
+
+## HDR environment map (horizontal cube map format)
+
+envMapFile: "data/envmap/grace_drago03_cube1k.exr"
+
+## for experiments: envmap blur; gauss kernel size as a factor of envmap height; 0 to disable it
+envMapBlurSize: 0.0
+
+## for experiments: envmap resize to reduce resolution; factor of envmap height
+envMapResize: 1.0
+
+## size of the border ramp in virtual screen pixels
+borderRampSize: [ 80, 80 ]
+
+## anti shake
+useAntiShake: 0
+
+
+## if mode = single we can specify a fixed display position and orientation
+# fixedCamera: true
+# cameraPosition: [ 0, 0, 0 ]
+# cameraRotation: !!opencv-matrix
+#    rows: 3
+#    cols: 3
+#    dt: d
+#    data: [1, 0, 0, 
+#           0, 1, 0,
+#           0, 0, 1, ]
+
+
+## scale display image for decreased resolution and thus runtime
+#virtScreenSize: [ 683, 384 ]
+virtScreenSize: [ 1366, 768 ]
+
+## blacklevel capture and subtraction (only in single and h`old mode)
+useBlackframe: 1
+blackframeExposure: 3.2
+
+## image threshold for artoolkit
+trackingThreshold: 120
+
+## invert video frame / use greyscale
+trackingUseInverted: 1
+trackingUseColor: 0
+
+
+#
+# DSLR config
+#
+
+ # dslrPosition: [ 0, 0, 0 ]
+ # dslrRotation: !!opencv-matrix
+ #    rows: 3
+ #    cols: 3
+ #    dt: d
+ #    data: [1, 0, 0, 
+ #           0, 1, 0,
+ #           0, 0, 1, ]
+
+
+#remoteCaptureCommand: "sh remote_canon.sh"
+remoteCaptureCommand: "sh remote_canon_sound_only.sh"
+#remoteCaptureCommand: "echo"
+
+
+# tracking debug image and position
+dumpTrackingImage: 0
+dumpTrackingLog: 0
+
+# illumination runtime data
+dumpScreen: 0
+dumpHDRFrames: 0
+dumpEnvMapUsed: 0
+dumpEnvMapRemaining: 0
+dumpEnvMapCompleted: 1
+
+soundNotificationCommand: "sh sound_notification_demo.sh"
+backlightControlCommand: "sh set_backlight.sh"
+
+
+isFirstRow: 1 

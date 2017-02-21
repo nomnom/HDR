@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1389734817 source:/home/nom/uni/DA/Implementierung/src/calibrate_camera/calibrate_camera.cpp
+	"calibrate_camera.h"
+
+1389801208 /home/nom/uni/DA/Implementierung/src/calibrate_camera/calibrate_camera.h
+	"opencv2/core/core.hpp"
+

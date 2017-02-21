@@ -1,0 +1,44 @@
+Aufgabenstellung Diplomarbeit
+==============================
+
+Deutscher Titel:	HDR Beleuchtung von realen Objekten mit einem LDR Bildschirm für photographische Anwendungen
+Englischer Titel:	HDR Illumination of Real-World Objects with an LDR display for Photographical Applications
+
+Prüfer: Jun.-Prof. Martin Fuchs
+Betreuer: Sebastian Koch
+Bearbeiter: Manuel Jerger
+Beginn: 16. Dezember 2013
+
+
+Hintergrund
+------------
+
+Produktphotographie spielt eine wichtige Rolle für die Herstellung von Katalogen, Websites und Werbung und setzt anspruchsvolle Beleuchtungstechnik voraus. Diese Beleuchtung ist unter konventionellen Studiobedingungen nur mit erheblichem Aufwand herzustellen. 
+Eine in der Literatur beschriebene Lösung ist eine sogenannte “Light Stage” (siehe Debevec et al. 2002). Diese besteht aus sehr vielen, fest auf einer Kugeloberfläche angeordneten und individuell steuerbaren Lichtquellen. Sie können zum Aufnahmezeitpunkt eine beliebige (niedrig aufgelöste) Beleuchtungssituation herstellen. 
+
+In dieser Arbeit soll untersucht werden, wie mit einer kostengünstigen Bildschirmlichtquelle mit handelsüblichem Kontrast (Low Dynamic Range, LDR) durch  Ausnutzung von Wissen um das optische Verhalten der aufnehmenden Digitalkamera ein photographisch äquivalenter Effekt bei deutlich einfacherem Aufbau erzielt werden kann. Die Aufnahme des Objektes soll dabei durch eine oder mehrere Langzeitbelichtungen erfolgen um einen hohen Kontrast (High Dynamic Range, HDR) in der einfallenden Beleuchtung zu ermöglichen. Um einen möglichst umfassende Beleuchtung herzustellen soll der Bildschirm an unterschiedlichen Positionen aufgestellt werden, und seine Position mit automatischen Methoden bestimmt werden. 
+
+Aufgabenstellung
+-----------------
+
+Im Einzelnen soll die Diplomarbeit folgende Aufgabenteile umfassen:
+
+ *  Literaturrecherche und Feststellung des Stands der Technik
+ *  Radiometrische Kalibrierung eines Bildschirm-Kamera Systems
+ *  Erzeugung von effektiver distanter HDR-Beleuchtung mit einem LDR Bildschirm über eine zeitvariante Sequenz
+ *  Entwicklung eines Systems zur Feststellung der Position und Orientierung des Gerätes in einem abgedunkelten Raum
+ *  Erzeugung einer ausgedehnten Lichtfläche im Raum durch Bewegung des Gerätes, dabei soll die Aufnahme des Objektes mit einer oder mehreren Langzeitbelichtungen geschehen
+ *  Dokumentation der Hardware und Software
+ *  Ausarbeitung der Diplomarbeit
+
+Im Zuge der Diplomarbeit können noch folgende Erweiterungen entwickelt werden:
+
+ *  Tracking des Bildschirms in Echtzeit und Anzeige der bisher nicht abgedeckten Teile der Umgebungsbeleuchtung
+ *  Simulation von lokalen Lichtquellen 
+ *  Simulation von blendenabhängigen Kameraeffekten 
+
+
+Referenz
+---------
+
+Debevec et al. 2002: Paul Debevec, Andreas Wenger, Chris Tchou, Andrew Gardner, Jamie Waese and Tim Hawkins (2002): A lighting reproduction approach to live-action compositing. ACM Transactions on Graphics (Proc. SIGGRAPH 2002) 

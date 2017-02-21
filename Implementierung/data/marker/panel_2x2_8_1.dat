@@ -1,0 +1,35 @@
+# layout: 2x2
+# size: 30
+# spacing: 45
+
+
+4
+
+data/marker/marker_8.dat
+30
+0 0
+0 0 1 76.45
+1 0 0 -37.5
+0 1 0 -37.5
+
+data/marker/marker_9.dat
+30
+0 0
+0 0 1 76.45
+1 0 0 37.5
+0 1 0 -37.5
+
+data/marker/marker_10.dat
+30
+0 0
+0 0 1 76.45
+1 0 0 -37.5
+0 1 0 -112.5
+
+data/marker/marker_11.dat
+30
+0 0
+0 0 1 76.45
+1 0 0 37.5
+0 1 0 -112.5
+

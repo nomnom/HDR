@@ -1,0 +1,70 @@
+# layout: 3x3
+# size: 30
+# spacing: 15
+
+
+9
+
+data/marker/marker_8.dat
+30
+0 0
+0 1 0 45
+0 0 -1 -74.5
+-1 0 0 -29.5
+
+data/marker/marker_9.dat
+30
+0 0
+0 1 0 45
+0 0 -1 -74.5
+-1 0 0 -74.5
+
+data/marker/marker_10.dat
+30
+0 0
+0 1 0 45
+0 0 -1 -74.5
+-1 0 0 -119.5
+
+data/marker/marker_11.dat
+30
+0 0
+0 1 0 0
+0 0 -1 -74.5
+-1 0 0 -29.5
+
+data/marker/marker_12.dat
+30
+0 0
+0 1 0 0
+0 0 -1 -74.5
+-1 0 0 -74.5
+
+data/marker/marker_13.dat
+30
+0 0
+0 1 0 0
+0 0 -1 -74.5
+-1 0 0 -119.5
+
+data/marker/marker_14.dat
+30
+0 0
+0 1 0 -45
+0 0 -1 -74.5
+-1 0 0 -29.5
+
+data/marker/marker_15.dat
+30
+0 0
+0 1 0 -45
+0 0 -1 -74.5
+-1 0 0 -74.5
+
+data/marker/marker_16.dat
+30
+0 0
+0 1 0 -45
+0 0 -1 -74.5
+-1 0 0 -119.5
+

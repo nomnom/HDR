@@ -1,0 +1,80 @@
+
+\chapter{Verwandte Arbeiten} \label{verwandte_arbeiten}
+
+ 
+ Das System das in dieser Arbeit vorgestellt wird ist eine Light-Stage (siehe Kapitel \ref{lightstages}).
+ Im Gegensatz zu den üblichen Light-Stage-Konstruktionen werden die Lichtquellen jedoch nicht mit diskreten Lampen realisiert, sondern mit einem mobilen Bildschirm.
+ Dadurch kann zwar zu jedem Zeitpunkt immer nur ein Teil der einfallenden Beleuchtung erzeugt werden, dafür aber mit einer extrem hohen Auflösung.
+ Angenommen, die Fläche einer Light-Stage-Lampe beträgt $7cm^2$ und der Bildschirm hat eine Pixeldichte von 96 DPI.
+ Verwendet man einen Bildschirm, so lassen sich auf der selben Fläche $10^5$ Pixel unterbringen.
+ Durch die sehr hohe Auflösung ergeben sich neue Anwendungsfelder, bei denen herkömmliche Light-Stages nicht eingesetzt werden können. 
+ Die Zusammenhänge zu den unterschiedlichen Light-Stage-Konstruktionen werden in Abschnitt \ref{rel:lightstages} behandelt.
+ 
+ Diese Arbeit hat auch Ähnlichkeiten mit den  \emph{Environment-Matting}-Verfahren.
+ Sie ermöglichen es, ein reales Objekt derart von dem Hintergrund (engl: ``Backdrop'') zu separieren, dass es realistisch vor einem beliebigen anderen Hintergrund gesetzt werden kann. 
+ Dazu wird der Lichtfluss zwischen Hintergrund, Objekt und Kamera modelliert und rekonstruiert, sodass beispielsweise auch die Lichtbrechung in transparenten Materialien erfasst werden kann, welche das Erscheinungsbild maßgeblich beeinflusst.
+ Environment-Matting kann als Ergänzung zu Light-Stages gesehen werden: Mit diskreten Lampen kann nämlich kein Backdrop erzeugt werden. 
+ Die Zusammenhänge zwischen dieser Arbeit und den Environment-Matting-Verfahren werden in  \ref{rel:envmatting} erklärt.
+
+ 
+ 
+ \section{Light-Stages} \label{rel:lightstages}
+  
+% IBL 
+  Fotografiert man eine Szene mit einer Kamera, so misst man im Endeffekt die Strahldichte die von vielen Punkten der Szene ausgeht.
+  Wenn man die Szene dabei von unterschiedlichen Richtungen beleuchtet, so kann man das sogenannte Reflektanzfeld rekonstruieren.
+  Aufgrund der additiven Eigenschaften des Lichttransports kann man die Aufnahmen linear kombinieren und die Szene unter einer neuen Beleuchtung ``rendern''.
+  Dieses bildbasierte Renderingverfahren nennt sich ``Image-Based Relighting'', im Folgenden mit ``IBR'' abgekürzt.
+  IBR hat die schöne intrinsische Eigenschaft, dass in den gerenderten Bildern so gut wie alle physikalischen Lichteffekte die in einem Material auftreten korrekt wiedergegeben werden können. 
+  Bei der Aufnahme von Reflektanzfeldern verwendet man Light-Stages, die sich auf ganz unterschiedliche Arten konstruieren lassen.
+ 
+%  Eine populäre Anwendung von IBR ist das Rendern von menschlicher Haut, welche durch ihren schichtweisen Aufbau und die detaillierte Oberflächenstruktur  nur schwer realistisch gerendert werden kann.
+  Ein großer wissenschaftlicher Beitrag im Bereich IBL und Light-Stages wurde von Debevec und Hawkins geleistet.
+  Sie waren die Ersten die das Reflektanzfeld eines menschlichen Gesichts vermessen, und unter einer neuen Beleuchtung gerendert haben \cite{Debevec_2000}. 
+  Sie haben dazu eine Light-Stage entwickelt, die nur eine einzige Lichtquelle verwendet.
+  Die Lampe sitzt auf einem beweglichen Ausleger der rund um die Szene rotiert werden kann und dessen Position zu jedem Zeitpunkt bekannt ist.
+  Ganz ähnlich funktioniert die Free-Form Light-Stage von Masselus et al. \cite{Masselus_2002}. Sie besitzt ebenfalls nur eine Lichtquelle, die dabei jedoch von Hand gehalten und um die Szene herum bewegt wird. 
+  Ihre Position kann dann  anhand der Lichtreflexion an einer Kugeloberfläche berechnet werden.
+  Das gleiche Prinzip wird auch bei Fuchs et al. \cite{Fuchs_2005} angewendet. Sie erzeugen die einfallende Beleuchtung allerdings indirekt, über die diffuse Reflexion an den weißen Wänden eines Raumes.
+  In der Arbeit von Mohan et al. \cite{Mohan_2005} wird das Licht stattdessen mit einem computergesteuerten Scheinwerfer erzeugt, der eine diffuse weiße Kiste von innen anstrahlt. 
+  Anhand der Geometrie und der Scheinwerferausrichtung ist die Position der diffusen Lichtquelle zu jedem Zeitpunkt bekannt.
+
+  Da für IBR die einfallende Beleuchtung zu jedem Zeitpunkt nur aus \emph{einer} Richtung kommen muss, kann sie auch mit einen mobiler Bildschirm erzeugt werden. 
+  Das Verfahren, das in dieser Arbeit vorgestellt wird, kann hier also  verwendet werden.
+ 
+% multiple lights -> nicht anwendbar 
+  Es gibt jedoch auch Anwendungen in denen eine Szene aus vielen Richtungen \emph{gleichzeitig} beleuchtet werden muss, beispielsweise wenn die  Beleuchtung in Echtzeit erzeugt werden soll.
+  Hier sind insbesondere die Arbeiten von Debevec et al. \cite{Debevec_2002} und Lamond et al. \cite{Lamond_2006} zu nennen. 
+  Die Light-Stages, die sie dabei verwenden, bestehen aus zahlreichen computergesteuerten, farbigen Lichtquellen die (halb-) kugelförmig um die Szene angeordnet sind.
+  Mit ihnen kann eine einfallende Beleuchtung in Echtzeit erzeugt werden. 
+  Dadurch ist es möglich, eine Person unter einer zeitvarianten Beleuchtung zu filmen, weshalb das Prinzip in der Filmproduktion eingesetzt wird.
+  Das Verfahren von Anrys et al. \cite{Anrys_2004} verwendet ebenfalls eine Light-Stage mit vielen Lichtquellen, allerdings um ein Objekt statisch, anhand einer Benutzervorgabe, zu beleuchten.
+  Auch hier muss das Licht aus vielen Richtungen gleichzeitig in die Szene einfallen.
+ 
+  Da mit einem mobilen Bildschirm immer nur ein Teil der einfallenden Beleuchtung erzeugt werden kann, lässt er sich für Echtzeitanwendungen nicht einsetzen.
+   
+ % more point sources   
+  Durch die sehr hohe Auflösung eines Bildschirms ergeben sich allerdings auch neue Anwendungen, bei denen die üblichen Light-Stage-Konstruktionen nicht verwendet werden können.
+  Ein spiegelndes Objekt lässt sich nämlich nicht mit diskreten Lampen beleuchten, da sie in der Oberfläche sichtbar werden.
+  Verwendet man jedoch einen Bildschirm als Lichtquelle, so ist die Auflösung der Beleuchtung so hoch, dass die einzelnen Lichtquellen nicht mehr auf der Oberfläche auszumachen sind - es entsteht eine zusammenhängende Lichtfläche. 
+  Mit einer hohen Auflösung kann man also eine Klasse von Objekten beleuchten, bei der diskrete Lampen versagen.
+
+  
+
+\section{Environment-Matting} \label{rel:envmatting}
+  Environment-Matting kann man als Weiterentwicklung der normalen Matting-Verfahren ansehen.
+  Bei dem einfachste Matting-Verfahren, dem Bluescreen-Matting \cite{Smith_1996}, wird der Hintergrund anhand des Farbtons vom Vordergrund getrennt.
+  Das funktioniert allerdings nur, wenn sich die Szene farblich deutlich von der Hintergrundfarbe unterscheided. 
+  Mit transparenten oder spiegelnden Objekte ist Matting deshalb nicht möglich.
+ 
+  Das Environment-Matting erweitert das Matting-Prinzip, indem es den Lichtfluss zwischen Hintergrund, Szene und Kamera beachtet.
+   Damit ist es beispielsweise möglich, ein Glasobjekt, das komplexe Lichtbrechungen aufweist, vor einen neuen Hintergrund zu platzieren.
+  Auch Szenen mit feinen Strukturen wie Haare und Fell lassen sich so deutlich besser von einem Hintergrund trennen.
+  Das Verfahren wurde erstmals von Zongker \cite{Zongker_1999} vorgestellt, der auch den Begriff ``Environment-Matting'' geprägt hat, und konnte im Laufe der Zeit verbessert werden \cite{Chuang_2000, Wexler_2002}.
+
+  Environment-Matting stellen eine gute Ergänzung zu IBR dar: Mit einer Light-Stage lässt sich nämlich kein Hintergrund erzeugen.
+  Eine Kombination beider Prinzipien wird in den Arbeiten von Matusik et al.  \cite{Matusik_2002} und Debevec et al. \cite{Debevec_2002} beschrieben.
+   
+  Environment-Matting kann durch das Verfahren, das im weiteren Verlauf beschrieben wird, zwar nicht ersetzt werden, das Endergebniss ist aber vergleichbar: 
+  Durch die hohe Auflösung werden transparente und spiegelnde Objekte korrekt beleuchtet und ein Backdrop wird dabei automatisch erzeugt.
+  Möchte man die Beleuchtung ändern, so muss man sie allerdings auch neu herstellen und aufnehmen, und kann sie nicht einfach neu berechnen.

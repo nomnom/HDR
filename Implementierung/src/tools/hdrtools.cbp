@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="hdrtools" />
+		<Option platforms="Unix;" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="hdrtools" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Unit filename="hdrtools.cpp" />
+		<Extensions>
+			<code_completion>
+				<search_path add="../../lib/opencv-3.0.0-dev/install/include" />
+			</code_completion>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

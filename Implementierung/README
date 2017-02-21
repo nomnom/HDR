@@ -1,0 +1,55 @@
+
+
+
+
+contents of the directory "Implementierung"
+
+Root directory:  contains all capture/processing scripts and links to the program executables
+ capture.sh				Simple gphoto2 capture and image view script
+ convert_cubemaps.sh			Convert spherical env maps to our cube map format
+ create_testcube.sh			Script that creates the Tracking test cube data	
+ do_calibrate_camera.sh			Runs camera intrinsic calibration
+ do_calibrate_display_all.sh		Runs all required postprocessing steps after calibration capture
+ do_calibrate_display_capture.sh	Capture uniform response curves  (grey ramp)
+ do_calibrate_display_capture_cs.sh     Capture and calculate colorspace transformation matrix
+ do_calibrate_display_capture_svr.sh    Capture non-uniform response curve (each pixel has a different response)
+ do_calibrate_display_undistort.sh      Undistort screen photos via a checkerboard
+ do_calibrate_display_verify_capture.sh	Capture and evaluate display calibration data by showing and capturing radiance images.
+ get_response_svr.sh			Calculate display response curves
+ make.sh				Build all programs (I was too lazy to create correct makefiles)
+ remote_canon.sh 			Control canon DSLR camera unsing gphotos (multiple architectures; used by lighststage program)
+ set_backlight.sh			Control device backlight (multiple architectures ; used by lightstage program)
+ sound_notification.sh 			Play sound notifications (multiple architectures; used by lighststage program)
+ 
+The data directory contains global data for all implementations (environment maps, camera/display calibration data ...)
+ data/camera			Camere calibration files; Response curves and intrinsics.
+ data/display			Display calibration data; reponse curves, white/black screens 
+ data/envmap			HDR environment maps in angular and cube format
+ data/marker			ARToolKit Marker and lightstage configurations
+ data/sounds			WAV files used as notifications in the lightstage capture process
+ 
+ doc/				Documentation produced with doxygen.config
+ 
+ experiments/   		used as workdir for all experiments
+
+ lib/				libraries used by all implementations (RToolKit and OpenCV)
+
+ log/				Logging directory
+ 
+ src/				Source of all programs (each in a single directory, with the binary linked into the root directory)
+ src/artoolkit_test		First artoolkit experiments; useful for debugging
+ src/android_test		Dummy Android applikation (deprecated)
+ src/calibrate_camera		OpenCV default camera calibration program
+ src/control_display		Controls the screen; can display uniform colors, checkerboard and ramps in every flavor
+ src/evaluate_display		Evaluates display calibration raw data : recover response curves, colospace transform etc)
+ src/generate_patterns		Generate unique high reliable patterns for use with artoolkit ; generates images and marker calibration data 
+ src/lightstage			The main program: tracking HDR light stage using mobile displays
+ src/show_on_display		Display radiance images utilizing the display calibration data
+ src/undistort_display		Undistort raw display calibration images using the checkerboard image.
+ 
+ src/tools			Simple image and video tools
+ src/tools/imgtools2		image tools providing useful operations on images (uses OpenCV)
+ src/tools/vidtools		Video capture tool for webcam videos
+ src/tools/hdrtools		HDR reconstruction using OpenCV 3.0
+
+ 

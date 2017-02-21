@@ -1,0 +1,365 @@
+52
+data/marker/marker_0.dat
+30
+0 0
+0 0 -1 -76.45
+-1 0 0 37.5
+0 1 0 -37.5
+
+data/marker/marker_1.dat
+30
+0 0
+0 0 -1 -76.45
+-1 0 0 -37.5
+0 1 0 -37.5
+
+data/marker/marker_2.dat
+30
+0 0
+0 0 -1 -76.45
+-1 0 0 37.5
+0 1 0 -112.5
+
+data/marker/marker_3.dat
+30
+0 0
+0 0 -1 -76.45
+-1 0 0 -37.5
+0 1 0 -112.5
+
+data/marker/marker_4.dat
+30
+0 0
+1 0 0 -37.5
+0 0 -1 -76.65
+0 1 0 -37.5
+
+data/marker/marker_5.dat
+30
+0 0
+1 0 0 37.5
+0 0 -1 -76.65
+0 1 0 -37.5
+
+data/marker/marker_6.dat
+30
+0 0
+1 0 0 -37.5
+0 0 -1 -76.65
+0 1 0 -112.5
+
+data/marker/marker_7.dat
+30
+0 0
+1 0 0 37.5
+0 0 -1 -76.65
+0 1 0 -112.5
+
+data/marker/marker_8.dat
+30
+0 0
+0 0 1 76.45
+1 0 0 -37.5
+0 1 0 -37.5
+
+data/marker/marker_9.dat
+30
+0 0
+0 0 1 76.45
+1 0 0 37.5
+0 1 0 -37.5
+
+data/marker/marker_10.dat
+30
+0 0
+0 0 1 76.45
+1 0 0 -37.5
+0 1 0 -112.5
+
+data/marker/marker_11.dat
+30
+0 0
+0 0 1 76.45
+1 0 0 37.5
+0 1 0 -112.5
+
+data/marker/marker_12.dat
+30
+0 0
+1 0 0 -37.5
+0 0 1 76.65
+0 -1 0 -112.5
+
+data/marker/marker_13.dat
+30
+0 0
+1 0 0 37.5
+0 0 1 76.65
+0 -1 0 -112.5
+
+data/marker/marker_14.dat
+30
+0 0
+1 0 0 -37.5
+0 0 1 76.65
+0 -1 0 -37.5
+
+data/marker/marker_15.dat
+30
+0 0
+1 0 0 37.5
+0 0 1 76.65
+0 -1 0 -37.5
+
+data/marker/marker_16.dat
+30
+0 0
+1 0 0 -187.5
+0 1 0 187.5
+0 0 1 -150
+
+data/marker/marker_17.dat
+30
+0 0
+1 0 0 -112.5
+0 1 0 187.5
+0 0 1 -150
+
+data/marker/marker_18.dat
+30
+0 0
+1 0 0 -37.5
+0 1 0 187.5
+0 0 1 -150
+
+data/marker/marker_19.dat
+30
+0 0
+1 0 0 37.5
+0 1 0 187.5
+0 0 1 -150
+
+data/marker/marker_20.dat
+30
+0 0
+1 0 0 112.5
+0 1 0 187.5
+0 0 1 -150
+
+data/marker/marker_21.dat
+30
+0 0
+1 0 0 187.5
+0 1 0 187.5
+0 0 1 -150
+
+data/marker/marker_22.dat
+30
+0 0
+1 0 0 -187.5
+0 1 0 112.5
+0 0 1 -150
+
+data/marker/marker_23.dat
+30
+0 0
+1 0 0 -112.5
+0 1 0 112.5
+0 0 1 -150
+
+data/marker/marker_24.dat
+30
+0 0
+1 0 0 -37.5
+0 1 0 112.5
+0 0 1 -150
+
+data/marker/marker_25.dat
+30
+0 0
+1 0 0 37.5
+0 1 0 112.5
+0 0 1 -150
+
+data/marker/marker_26.dat
+30
+0 0
+1 0 0 112.5
+0 1 0 112.5
+0 0 1 -150
+
+data/marker/marker_27.dat
+30
+0 0
+1 0 0 187.5
+0 1 0 112.5
+0 0 1 -150
+
+data/marker/marker_28.dat
+30
+0 0
+1 0 0 -187.5
+0 1 0 37.5
+0 0 1 -150
+
+data/marker/marker_29.dat
+30
+0 0
+1 0 0 -112.5
+0 1 0 37.5
+0 0 1 -150
+
+data/marker/marker_30.dat
+30
+0 0
+1 0 0 -37.5
+0 1 0 37.5
+0 0 1 -150
+
+data/marker/marker_31.dat
+30
+0 0
+1 0 0 37.5
+0 1 0 37.5
+0 0 1 -150
+
+data/marker/marker_32.dat
+30
+0 0
+1 0 0 112.5
+0 1 0 37.5
+0 0 1 -150
+
+data/marker/marker_33.dat
+30
+0 0
+1 0 0 187.5
+0 1 0 37.5
+0 0 1 -150
+
+data/marker/marker_34.dat
+30
+0 0
+1 0 0 -187.5
+0 1 0 -37.5
+0 0 1 -150
+
+data/marker/marker_35.dat
+30
+0 0
+1 0 0 -112.5
+0 1 0 -37.5
+0 0 1 -150
+
+data/marker/marker_36.dat
+30
+0 0
+1 0 0 -37.5
+0 1 0 -37.5
+0 0 1 -150
+
+data/marker/marker_37.dat
+30
+0 0
+1 0 0 37.5
+0 1 0 -37.5
+0 0 1 -150
+
+data/marker/marker_38.dat
+30
+0 0
+1 0 0 112.5
+0 1 0 -37.5
+0 0 1 -150
+
+data/marker/marker_39.dat
+30
+0 0
+1 0 0 187.5
+0 1 0 -37.5
+0 0 1 -150
+
+data/marker/marker_40.dat
+30
+0 0
+1 0 0 -187.5
+0 1 0 -112.5
+0 0 1 -150
+
+data/marker/marker_41.dat
+30
+0 0
+1 0 0 -112.5
+0 1 0 -112.5
+0 0 1 -150
+
+data/marker/marker_42.dat
+30
+0 0
+1 0 0 -37.5
+0 1 0 -112.5
+0 0 1 -150
+
+data/marker/marker_43.dat
+30
+0 0
+1 0 0 37.5
+0 1 0 -112.5
+0 0 1 -150
+
+data/marker/marker_44.dat
+30
+0 0
+1 0 0 112.5
+0 1 0 -112.5
+0 0 1 -150
+
+data/marker/marker_45.dat
+30
+0 0
+1 0 0 187.5
+0 1 0 -112.5
+0 0 1 -150
+
+data/marker/marker_46.dat
+30
+0 0
+1 0 0 -187.5
+0 1 0 -187.5
+0 0 1 -150
+
+data/marker/marker_47.dat
+30
+0 0
+1 0 0 -112.5
+0 1 0 -187.5
+0 0 1 -150
+
+data/marker/marker_48.dat
+30
+0 0
+1 0 0 -37.5
+0 1 0 -187.5
+0 0 1 -150
+
+data/marker/marker_49.dat
+30
+0 0
+1 0 0 37.5
+0 1 0 -187.5
+0 0 1 -150
+
+data/marker/marker_50.dat
+30
+0 0
+1 0 0 112.5
+0 1 0 -187.5
+0 0 1 -150
+
+data/marker/marker_51.dat
+30
+0 0
+1 0 0 187.5
+0 1 0 -187.5
+0 0 1 -150
+

@@ -1,0 +1,56 @@
+\chapter{Kalibrierung}
+  Kapitel ist eingeteilt in radiometrische und geometrische kalibrierung.\\
+  Bild: DSLR + Objekt + Display-Kamera System + (beispielhafter) Marker in Szene\\
+ 
+ \section{Radiometrisches Modell} 
+ Bild: wie oben, jedoch ohne webcam  und marker; Lichtfluss (2 Wege) von einzelnen Display-Pixeln zum Sensor (einmal direkt und einmal ueber das Objekt)\\
+ Modell vorstellen und erlaeutern\\
+ Blockdiagramm: Foto <- response curve <- Kamera-Sensor <- crosstalk <- display radiance <- response curves <- 8 bit Framebuffer \\
+  Diagramm erklaeren; Insb. Erklaeren dass es zum Uebersprechen der drei Farben kommt.\\ 
+ Jetzt schrittweise die Kalibrierung der einzelnen Teile vorstellen (v.l.n.r)\\
+ 
+ \subsection{Ansprechverhalten der DSLR} 
+  Robertson et al (pfstools) verwendet; andere moeglichkeiten: debvec\\
+  Graph: reponse curve der Canon 5D; Aufteilen in linear + rest\\
+  Linearen Bereich und ungenauigkeit der >90\% erwaehnen.
+
+ \subsection{Crosstalk} 
+  NOTE: besserer Titel\\
+  Gleichung: Kamera-Radiance = Matrix * display-Radiance \\
+  Dies kann man invertieren; Kalibrationsvorgang erklaeren (drei Bilder, matrix berechnen, invertieren);
+ 
+ \subsection{Ansprechverhalten des Displays}
+  Bild: display erzeugt ausschnitt einer environment map; lichtkegel von display zum ursprung\\
+  Eingehendes Licht im Ursprung muss gemessen werden; darum aufstellen der Kamera an richtiger position  \\
+  Bild: Zeichnung des Display Kalibrationsaufbaus \\
+  
+  Beschreibung der Kalibrationsvorgangs: 32x Greyscreen, per-pixel response curve linear interpoliert  \\
+  Limitierung der lin. interpol.: Tendentiell immer zu niedrige Werte; kompliziertere Kurven sind moeglich falls ein kleinerer Fehler erwuenscht wird.  \\
+  Anmerken dass aufgrund der verwendeten HDR Beleuchtungsmethode sich fehler in der response curve nicht so stark auf das Ergebniss auswirken.\\  
+  Graph: Verlauf dreier Reponse curves eines Displays (zwei benachbarte patches + eins weiter entfernt um unterschiede bzw glatter verlauf zeigen zu koennen)\\
+ NOTE: hier  zeigen dass alles funktioniert (zwischenergebnisse)? Z.B. drei Fotos vom Display: einmal bild direkt anzeigen, einmal gemappt ueber response curve und ohne crosstalk zu beachten, einmal response curve mit crosstalk beachten), differenz
+ 
+
+\section{Geometrisches Modell}
+ Bild: wie am Anfang vom Chapter, mit eingezeichneten Vektoren und Achsen der einzelnen koordinatensysteme  (World/Cam/Display/Marker)\\
+  Translation-vector zwischen webcam und Display; wenn normal/eye-vector nicht parallel: transformations-matrix\\
+ 
+\subsection{Intrinsische Parameter der Kameras}
+  Bestimmung der Matrix und distortion-coefficients mittels opencv camera calibration; \\
+  Kurze erklaerung der opencv methode\\
+  Bild: Foto von schachbrett einmal mit und einmal ohne undistort.
+
+\subsection{Display-Kamera System}
+ NOTE: titel?
+ Erste annahme: sehachse parallel zur display normalen; \\
+ verifiziert und bestaetigt durch : schachbrettmuster parallel zu display aufgestellt , keine perspektivische verzerrrung im kamerabild sichtbar; \\
+  Erwaehnen moeglicher automatischer verfahren (Spiegel oder zweite Kamera);\\
+
+\subsection{Markierungen}
+  Transformationsmatrix aller aller Markierungen zum welt-ursprung muss bekannt sein\\
+  Wird von Hand definiert, verweis auf kapitel positionsbestimmung\\
+
+    
+
+    
+  

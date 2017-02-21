@@ -1,0 +1,14 @@
+---------
+ notepad
+---------
+
+ Creating an Android Application that uses OpenCV and native C++ code
+
+  - make sure java JDK is installed
+  - download Android SDK (android-sdk-linux) and extract somewhere (anywhere)
+  - add to $PATH : android-sdk-linux/tools
+		   android-sdk-linux/platform-tools
+  - create a project folder for the app and use the command 'android' to create the skeleton:
+       android create project --target android-17 --name SomeAppName --path path/to/project/folder --activity SomeName --package de.visus.some.namespace
+  - ... more to come    
+

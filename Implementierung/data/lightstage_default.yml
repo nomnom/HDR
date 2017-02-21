@@ -1,0 +1,136 @@
+%YAML:1.0
+#
+# lightstage example default configuration file
+#
+
+## artoolkit multimarker config file for the stage
+markerConfigFile: "data/marker/stage.dat"
+
+## required number of visible marker before position is accepted
+numMarkerRequired: 2
+
+## size of virtual light stage sphere in mm, for guided display movement
+stageRadius: 500
+
+## stage radius tolerance (allowed delta radius)
+stageRadiusTolerance: 20
+
+## max allowed light angle in degree
+stageAngleTolerance: 5.0
+
+allowedDrift: 50
+
+## origin position / translation (note: z-dir is up; (0,0,0) is at center of platform) unit is mm
+stageOrigin: [ 0.0, 0.0, 100.0 ] 
+
+## number of frames: increase display dynamic range by this much
+hdrSequenceSize: 20 
+
+## choose maxmimum possible FPS here
+hdrSequenceFPS: 20
+
+## hdr sequence blur (not in radiance space right now, just experimental)
+hdrSequenceBlurSize: 0
+
+## 0 -> use autoscale 
+radianceMultiplier: 0
+
+## time between gphoto call and showing the image on the screen
+captureWaitTime: 0.4
+
+## exposure time in seconds; must be large enough to fit the hdr sequence
+dslrExposure: 1.6
+
+## in sweep mode: maximum DSLR exposure time in seconds
+dslrAperture: 13
+
+## blacklevel capture and subtraction (only in single and h`old mode)
+useBlackframe: 1
+blackframeExposure: 1.6
+
+
+## apply cos phi factor while calculating required screen radiance?
+useCosFactor: 0
+
+## use colorspace transform?
+useColorSpaceTransform: 0
+
+## HDR environment map (horizontal cube map format)
+#envMapFile: "data/envmap/teststripes_cube1k.exr"
+envMapFile: "data/envmap/ennis_cube1k.exr"
+#envMapFile: "data/envmap/grace-new_cube1k.exr"
+
+## for experiments: envmap blur; gauss kernel size as a factor of envmap height; 0 to disable it
+envMapBlurSize: 0.00
+
+## for experiments: envmap resize to reduce resolution; factor of envmap height
+envMapResize: 1.0
+
+## size of the border ramp in virtual screen pixels
+borderRampSize: [ 40, 40 ]
+
+## anti shake
+useAntiShake: 0 
+
+## if mode = single we can specify a fixed display position and orientation
+# fixedCamera: true
+# cameraPosition: [ 0, 0, 0 ]
+# cameraRotation: !!opencv-matrix
+#    rows: 3
+#    cols: 3
+#    dt: d
+#    data: [1, 0, 0, 
+#           0, 1, 0,
+#           0, 0, 1, ]
+
+
+## scale display image for decreased resolution and thus runtime
+#virtScreenSize: [ 683, 384 ]
+virtScreenSize: [ 1366, 768 ]
+
+## image threshold for artoolkit
+trackingThreshold: 130 
+
+
+
+## invert video frame / use greyscale
+trackingUseInverted: 1
+trackingUseColor: 0
+
+
+#
+# DSLR config
+#
+
+ # dslrPosition: [ 0, 0, 0 ]
+ # dslrRotation: !!opencv-matrix
+ #    rows: 3
+ #    cols: 3
+ #    dt: d
+ #    data: [1, 0, 0, 
+ #           0, 1, 0,
+ #           0, 0, 1, ]
+
+
+remoteCaptureCommand: "sh remote_canon.sh"
+#remoteCaptureCommand: "echo"
+
+
+# tracking debug image and position
+dumpTrackingImage: 1
+dumpTrackingLog: 1
+
+# illumination runtime data
+dumpScreen: 1
+dumpHDRFrames: 0
+dumpEnvMapUsed: 1
+dumpEnvMapRemaining: 0
+dumpEnvMapCompleted: 1
+
+soundNotificationCommand: "sh sound_notification.sh"
+backlightControlCommand: "sh set_backlight.sh"
+
+
+
+isFirstRow: true
+

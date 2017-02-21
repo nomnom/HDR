@@ -1,0 +1,26 @@
+Camera calibration (intrinsics)
+-------------------------------
+
+
+
+Display calibration
+--------------------
+
+  A) Display device that can control the camera (e.g. laptop)
+     1. setup DLSR: optical axis perpend. to display, maximize FL and distance, blur image by defocusing if aliasing occurs
+     2. darken room and capture images:   do_calibrate_display_capture.sh <id> <subid>
+     3. process images: do_calibrate_display_all.sh <id> <subid>
+
+  B) Display device that cannot control the camera: Android device
+      -> will use an app to control the screen and a computer to control the camera
+     TODO implement
+     1. setup DLSR: optical axis perpend. to display, maximize FL and distance, blur image by defocusing if aliasing occurs
+     2. darken room and capture images: run do_calibrate_display_capture_android.sh and start calibration app simultaneously
+     3. process images: do_calibrate_display_all.sh <id> <subid> 
+     
+
+
+   resulting calibration data:
+        inv. resp. curve:	 experiments/id/subid/response_lut.yml
+        white screen:		 experiments/id/subid/3_black_undist.exr
+        black screen		 experiments/id/subid/4_white_undist.exr

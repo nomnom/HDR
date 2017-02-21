@@ -1,0 +1,23 @@
+\chapter{Erzeugen von lokaler Beleuchtung}
+\label{chap:lokale_beleuchtung}
+
+  Eine weitere Anwendung: Simulation bzw erzeugen von lokalen Lichtquellen mit einem Display.\\
+  Idee: statt einer Lichtflaeche wird ein Lichtvolumen erzeugt. \\
+
+ \section{Volumetrische Daten}
+ 
+ \section{Ablauf}
+  Beschreibung des (einfachen) beleuchtungsablaufes:
+    1. display wird gleichmaessig bewegt und positions getrackt\\
+    2. fuer jedes pixel:\\
+       bestimme position im voxel volumen\\
+       uebernehme farbe\\
+       subtrahiere von radiance (4. kanal)
+       sobald die radiance aller voxel = 0 -> finished
+
+ \section{Ergebnisse}
+  Ein paar erzeugte Lichtquellen
+
+
+  
+

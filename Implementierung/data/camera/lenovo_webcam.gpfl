@@ -1,0 +1,21 @@
+#V4L2/CTRL/0.0.2
+APP{"guvcview 1.6.1"}
+# control data
+#Brightness
+ID{0x00980900};CHK{-10:10:1:0}=VAL{0}
+#Contrast
+ID{0x00980901};CHK{0:20:1:10}=VAL{10}
+#Saturation
+ID{0x00980902};CHK{0:10:1:5}=VAL{5}
+#Hue
+ID{0x00980903};CHK{-5:5:1:0}=VAL{0}
+#Gamma
+ID{0x00980910};CHK{100:200:1:150}=VAL{150}
+#Gain
+ID{0x00980913};CHK{32:48:1:32}=VAL{32}
+#Power Line Frequency
+ID{0x00980918};CHK{0:2:1:2}=VAL{0}
+#Sharpness
+ID{0x0098091b};CHK{0:10:1:5}=VAL{0}
+#Backlight Compensation
+ID{0x0098091c};CHK{0:2:1:1}=VAL{0}

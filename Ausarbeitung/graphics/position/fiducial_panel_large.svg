@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="940"
+   height="340"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="fiducial_panel_large.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1040"
+     inkscape:window-height="653"
+     id="namedview6"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.44833579"
+     inkscape:cx="426.44615"
+     inkscape:cy="-21.852124"
+     inkscape:window-x="2216"
+     inkscape:window-y="229"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <path
+     d="m 0,290 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 49,17.5 0,-6.5 6,0 6,0 0,6.5 0,6.5 6.5,0 6.5,0 0,-12.5 0,-12.5 -6.5,0 -6.5,0 0,-6 0,-6 6.5,0 6.5,0 0,-6 0,-6 -12.5,0 -12.5,0 0,6 0,6 -6,0 -6,0 0,-6 0,-6 -6,0 -6,0 0,12 0,12 12,0 12,0 0,6 0,6 -6,0 -6,0 0,6.5 0,6.5 6,0 6,0 z m 71,-17.5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 37,11.5 0,-12.5 -6,0 -6,0 0,12.5 0,12.5 6,0 6,0 z m 24,6 0,-6.5 6.5,0 6.5,0 0,-6 0,-6 -6.5,0 -6.5,0 0,-12 0,-12 -6,0 -6,0 0,12 0,12 6,0 6,0 0,6 0,6 -6,0 -6,0 0,6.5 0,6.5 6,0 6,0 z m -24,-36.5 0,-6 -6,0 -6,0 0,6 0,6 6,0 6,0 z m 83,19 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 61,17.5 0,-6.5 6.5,0 6.5,0 0,-6 0,-6 -24.5,0 -24.5,0 0,6 0,6 12,0 12,0 0,6.5 0,6.5 6,0 6,0 z m 13,-36.5 0,-6 -24.5,0 -24.5,0 0,6 0,6 24.5,0 24.5,0 z m 46,19 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 49,17.5 0,-6.5 6,0 6,0 0,6.5 0,6.5 6.5,0 6.5,0 0,-12.5 0,-12.5 -6.5,0 -6.5,0 0,-12 0,-12 -6,0 -6,0 0,6 0,6 -6,0 -6,0 0,6 0,6 -6,0 -6,0 0,12.5 0,12.5 12,0 12,0 z m 71,-17.5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 49,17.5 0,-6.5 -6,0 -6,0 0,6.5 0,6.5 6,0 6,0 z m 25,-18 0,-24.5 -6.5,0 -6.5,0 0,6 0,6 -6,0 -6,0 0,6 0,6 6,0 6,0 0,12.5 0,12.5 6.5,0 6.5,0 z m -37,-6.5 0,-6 -6,0 -6,0 0,6 0,6 6,0 6,0 z m 83,7 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 49,17.5 0,-6.5 12.5,0 12.5,0 0,-6 0,-6 -6.5,0 -6.5,0 0,-6 0,-6 6.5,0 6.5,0 0,-6 0,-6 -6.5,0 -6.5,0 0,6 0,6 -6,0 -6,0 0,-6 0,-6 -6,0 -6,0 0,6 0,6 -6,0 -6,0 0,6 0,6 6,0 6,0 0,-6 0,-6 6,0 6,0 0,12 0,12 -6,0 -6,0 0,6.5 0,6.5 6,0 6,0 z m 71,-17.5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 49,17.5 0,-6.5 -6,0 -6,0 0,-18 0,-18 -6,0 -6,0 0,24.5 0,24.5 12,0 12,0 z m 25,0 0,-6.5 -6.5,0 -6.5,0 0,6.5 0,6.5 6.5,0 6.5,0 z m 0,-30.5 0,-12 -6.5,0 -6.5,0 0,12 0,12 6.5,0 6.5,0 z m 46,13 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 37,11.5 0,-12.5 6,0 6,0 0,12.5 0,12.5 12.5,0 12.5,0 0,-6.5 0,-6.5 -6.5,0 -6.5,0 0,-18 0,-18 -6,0 -6,0 0,6 0,6 -6,0 -6,0 0,6 0,6 -6,0 -6,0 0,12.5 0,12.5 6,0 6,0 z M 0,170 l 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 37,17.5 0,-6.5 6,0 6,0 0,-6 0,-6 -6,0 -6,0 0,6 0,6 -6,0 -6,0 0,6.5 0,6.5 6,0 6,0 z m 37,0 0,-6.5 -6.5,0 -6.5,0 0,6.5 0,6.5 6.5,0 6.5,0 z M 61,151 l 0,-6 -18,0 -18,0 0,6 0,6 18,0 18,0 z m 59,19 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 74,17.5 0,-6.5 -6.5,0 -6.5,0 0,-6 0,-6 -6,0 -6,0 0,6 0,6 6,0 6,0 0,6.5 0,6.5 6.5,0 6.5,0 z m -37,-30.5 0,-12 -6,0 -6,0 0,12 0,12 6,0 6,0 z m 37,-6 0,-6 -12.5,0 -12.5,0 0,6 0,6 12.5,0 12.5,0 z m 46,19 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 61,17.5 0,-6.5 -6,0 -6,0 0,-6 0,-6 -6,0 -6,0 0,12.5 0,12.5 12,0 12,0 z m -12,-36.5 0,-6 -6,0 -6,0 0,6 0,6 6,0 6,0 z m 25,0 0,-6 -6.5,0 -6.5,0 0,6 0,6 6.5,0 6.5,0 z m 46,19 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 37,17.5 0,-6.5 12,0 12,0 0,6.5 0,6.5 6.5,0 6.5,0 0,-6.5 0,-6.5 -6.5,0 -6.5,0 0,-6 0,-6 6.5,0 6.5,0 0,-12 0,-12 -24.5,0 -24.5,0 0,6 0,6 12,0 12,0 0,6 0,6 -12,0 -12,0 0,12.5 0,12.5 6,0 6,0 z m 83,-17.5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 61,17.5 0,-6.5 -6,0 -6,0 0,-6 0,-6 6,0 6,0 0,-12 0,-12 -18,0 -18,0 0,18 0,18 12,0 12,0 0,6.5 0,6.5 6,0 6,0 z m 59,-17.5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 61,17.5 0,-6.5 6.5,0 6.5,0 0,-12 0,-12 -6.5,0 -6.5,0 0,-6 0,-6 -18,0 -18,0 0,18 0,18 6,0 6,0 0,6.5 0,6.5 12,0 12,0 z m -24,-18.5 0,-12 12,0 12,0 0,6 0,6 -6,0 -6,0 0,6 0,6 -6,0 -6,0 z m 83,1 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 61,11.5 0,-12.5 6.5,0 6.5,0 0,-12 0,-12 -6.5,0 -6.5,0 0,6 0,6 -6,0 -6,0 0,-6 0,-6 -12,0 -12,0 0,12 0,12 12,0 12,0 0,6 0,6 -6,0 -6,0 0,6.5 0,6.5 12,0 12,0 z m 59,-11.5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 37,17.5 0,-6.5 6,0 6,0 0,6.5 0,6.5 6,0 6,0 0,-6.5 0,-6.5 -6,0 -6,0 0,-6 0,-6 12.5,0 12.5,0 0,-6 0,-6 -6.5,0 -6.5,0 0,-6 0,-6 -12,0 -12,0 0,6 0,6 -6,0 -6,0 0,6 0,6 6,0 6,0 0,6 0,6 -6,0 -6,0 0,6.5 0,6.5 6,0 6,0 z M 0,50 0,0 l 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 74,17.5 0,-6.5 -6.5,0 -6.5,0 0,-6 0,-6 6.5,0 6.5,0 0,-6 0,-6 -6.5,0 -6.5,0 0,-6 0,-6 -12,0 -12,0 0,12 0,12 -6,0 -6,0 0,6 0,6 6,0 6,0 0,6.5 0,6.5 18.5,0 18.5,0 z M 37,55 l 0,-6 6,0 6,0 0,6 0,6 -6,0 -6,0 z m 83,-5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 74,11.5 0,-12.5 -12.5,0 -12.5,0 0,6 0,6 -6,0 -6,0 0,-12 0,-12 6,0 6,0 0,-6 0,-6 -6,0 -6,0 0,6 0,6 -6,0 -6,0 0,12 0,12 6,0 6,0 0,6.5 0,6.5 18.5,0 18.5,0 z m 46,-11.5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 74,11.5 0,-12.5 -6.5,0 -6.5,0 0,-6 0,-6 -6,0 -6,0 0,18.5 0,18.5 12.5,0 12.5,0 z M 277,31 l 0,-6 -6,0 -6,0 0,6 0,6 6,0 6,0 z m 83,19 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 37,17.5 0,-6.5 12,0 12,0 0,6.5 0,6.5 6.5,0 6.5,0 0,-6.5 0,-6.5 -6.5,0 -6.5,0 0,-12 0,-12 6.5,0 6.5,0 0,-6 0,-6 -6.5,0 -6.5,0 0,6 0,6 -6,0 -6,0 0,-6 0,-6 -12,0 -12,0 0,12 0,12 6,0 6,0 0,6 0,6 -6,0 -6,0 0,6.5 0,6.5 6,0 6,0 z m 0,-24.5 0,-6 6,0 6,0 0,6 0,6 -6,0 -6,0 z m 83,7 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 74,17.5 0,-6.5 -6.5,0 -6.5,0 0,-6 0,-6 6.5,0 6.5,0 0,-6 0,-6 -6.5,0 -6.5,0 0,6 0,6 -6,0 -6,0 0,-12 0,-12 -12,0 -12,0 0,6 0,6 6,0 6,0 0,6 0,6 6,0 6,0 0,6 0,6 -6,0 -6,0 0,6.5 0,6.5 18.5,0 18.5,0 z m 46,-17.5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 74,-0.5 0,-24.5 -6.5,0 -6.5,0 0,12 0,12 -12,0 -12,0 0,6 0,6 -6,0 -6,0 0,6.5 0,6.5 24.5,0 24.5,0 z m 46,0.5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 74,17.5 0,-6.5 -6.5,0 -6.5,0 0,-12 0,-12 -6,0 -6,0 0,-6 0,-6 -12,0 -12,0 0,6 0,6 12,0 12,0 0,6 0,6 -12,0 -12,0 0,6 0,6 12,0 12,0 0,6.5 0,6.5 12.5,0 12.5,0 z m 46,-17.5 0,-50 50,0 50,0 0,50 0,50 -50,0 -50,0 z m 74,11.5 0,-12.5 -6.5,0 -6.5,0 0,12.5 0,12.5 6.5,0 6.5,0 z m -25,-6.5 0,-6 -6,0 -6,0 0,-12 0,-12 -6,0 -6,0 0,12 0,12 6,0 6,0 0,6 0,6 6,0 6,0 z m 25,-24 0,-6 -6.5,0 -6.5,0 0,6 0,6 6.5,0 6.5,0 z"
+     id="path3000"
+     style="fill:#000000"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+</svg>

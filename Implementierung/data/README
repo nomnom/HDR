@@ -1,0 +1,9 @@
+Implementierung/data
+
+This directory contains all global data ressource used by all applications. 
+The contents of the subdirectories are as follows:
+
+data/envmap		Environment Maps in hdr or pfm format; compatible with pfspanoramic; filename containts parametrisation
+data/camera		Camera calibration data (intrinsic parameters and OECFs)
+data/display		Display calibration data
+

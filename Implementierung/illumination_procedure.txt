@@ -1,0 +1,36 @@
+dependencies:
+ - have display and camera calibration data
+ - have scene
+ - have environment map
+ - have full battery
+
+setup:
+ - setup scene 
+ - setup DSLR on tripod and focus on scene
+ - configure lightstage using config file:
+  - select illumination distance
+  - select environment map
+  - choose HDR sequence size and framerate
+  - select appropriate DSLR exposures for illumination and darkframe
+  - select another DSLR exposure for backdrop illumination
+ - check if display and camera is clean
+ - attach border blinds
+ - setup cabeling
+
+!!! stage, scene and tripod MUST NOT BE MOVED  !!!
+
+backdrop illumination
+ - find backdrope position in DSLR frustum
+ - configure exposure for backdrop illumination
+ - illuminate backdrop using backdrop-exposure
+
+normal illumination
+ - configure exposure for normal illumination
+ - start illuminating in an upsweeing zig-zag order
+ - check inbetween illuminations by applying post-process
+ - repeat until complete
+
+final postprocessing
+  - merge
+  - crop
+  - tonemap 
